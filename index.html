@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp By Jaydeep Bariya</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h3 class="logo"> <span class="logo1">Weather</span> <span class="logo2">App</span></h3>
+
+        <nav class="navbar">
+            <li><a href="#">Home</a></li>
+        </nav>
+
+    </header>
+
+    <!-- SearchBox -->
+    <div class="searchbox" id="searchbox">
+        <input type="text" name="city" id="city" placeholder="Enter City Name">
+        <button id="search-btn">Search</button>
+    </div>
+
+
+    <!-- Current Weather -->
+    <section class="current-weather" id="current-weather">
+
+        <div class="weather-section" id="sun">
+            <h3 class="weather-section-title">Sun</h3>
+
+            <div class="weather-data" id="sun-weather-data">
+                <div class="other-data">
+                    <p>Sunrise Time : <span id="sunrise-time"></span></p>
+                    <p>Sunset Time : <span id="sunset-time"></span></p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="weather-section" id="wind">
+
+            <h3 class="weather-section-title">Wind</h3>
+
+            <div class="weather-data wind-weather-data">
+                <div class="head-data">
+                    <h1 class="wind-speed"></h1> <span>Km/Hr</span>
+                </div>
+
+                <div class="other-data">
+                    <p>Wind Speed : <span class="wind-speed"></span> km/Hr</p>
+                    <p>Wind Degrees : <span class="wind-degrees"></span> &deg;</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="weather-section" id="temprature">
+            <h3 class="weather-section-title">Temprature</h3>
+
+            <div class="weather-data" id="temprature-weather-data">
+                <div class="head-data">
+                    <h1 class="temp"></h1> <span>&#8451;</span>
+                </div>
+
+                <div class="other-data">
+                    <p>Temprature : <span class="temp"></span> &#8451;</p>
+                    <p>Maximum Temprature : <span id="max-temp"></span> &#8451;</p>
+                    <p>Minimum Temparature : <span id="min-temp"></span> &#8451;</p>
+                    <p>Feels like : <span id="fill-temp"></span> &#8451;</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="weather-section" id="humidity">
+            <h3 class="weather-section-title">Humidity</h3>
+
+            <div class="weather-data" id="wind-weather-data">
+                <div class="head-data">
+                    <h1 class="humidity"></h1> <span>&percnt;</span>
+                </div>
+
+                <div class="other-data">
+                    <p>Humidity : <span class="humidity"></span> &percnt;</p>
+                    <p>Cloud PCT : <span id="cloud-pct"></span> &percnt;</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; All Rights Reserved. Developed By <span>Jaydeep Bariya</span></p>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+
+</html>

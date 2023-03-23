@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    list-style-type: none;
+}
+
+span{
+    font-weight: bolder;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(105, 173, 232);
+    flex-wrap: wrap;
+    padding: 0.5%;
+}
+
+header .logo{
+    max-width: max-content;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+header logo .logo1{
+    color: brown;
+}
+
+header logo .logo2{
+    color: black;
+}
+
+header .navbar{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.navbar li:hover{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.searchbox{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+
+    column-gap: 5%;
+}
+
+.searchbox button {
+    width: 10%;
+    height: 40px;
+    border: none;
+
+    background-color: orange;
+}
+
+.searchbox input[type="text"]{
+    width: 40%;
+    height: 40px;
+    font-size: 30px;
+}
+
+.searchbox button:hover{
+    background-color: rgb(57, 152, 152);
+    color: black;
+}
+
+.searchbox button:active{
+    background-color: rgb(127, 169, 169);
+    color: rgb(237, 80, 80);
+}
+
+.searchbox button:after{
+    background-color: rgb(49, 150, 150);
+    color: rgb(52, 40, 40);
+}
+
+footer{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    text-align: center;
+    background-color: rgb(105, 173, 232);
+}
+
+.current-weather{
+    display: flex;
+    justify-content: center;
+    column-gap: 5%;
+    margin-top: 5%;
+}
+
+.weather-section{
+    width: 20%;
+    height: 300px;
+    background-color: rgba(105, 173, 232, 0.5);
+    border-radius: 5%;
+}
+
+.weather-section-title{
+    text-align: center;
+    margin-top: 10%;
+    background-color: rgb(88, 183, 214);
+}
+
+.weather-data{
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.head-data{
+    font-size: 30px;
+}
+
+.head-data span{
+    opacity: .7;
+}
+
+.other-data{
+    margin-top: 5%;
+}
+
+
+
+
+
+
+
+
+
